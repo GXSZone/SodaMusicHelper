@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="brand_primary">#FF5BE08C</color>
+    <color name="brand_on_primary">#FF00391B</color>
+    <color name="brand_primary_container">#FF00512A</color>
+    <color name="brand_on_primary_container">#FFB9F6CA</color>
+    <color name="brand_secondary">#FF44D7C4</color>
+    <color name="brand_on_secondary">#FF00332B</color>
+    <color name="brand_secondary_container">#FF005046</color>
+    <color name="brand_on_secondary_container">#FFB2F0E6</color>
+    <color name="brand_tertiary">#FFB0A7FF</color>
+    <color name="brand_on_tertiary">#FF230F5E</color>
+
+    <!-- 深色 hero 渐变：配浅色文字（colorOnPrimaryContainer #B9F6CA），对比度 >= 5.4:1 -->
+    <color name="hero_gradient_start">#FF006B3C</color>
+    <color name="hero_gradient_end">#FF00565F</color>
+
+    <color name="surface_soft">#FF14251C</color>
+    <color name="on_surface_soft">#FFE2F4E8</color>
+    <color name="log_info">#FF81C995</color>
+    <color name="log_action">#FF8AB4F8</color>
+    <color name="log_warn">#FFFDD663</color>
+    <color name="log_error">#FFF28B82</color>
+</resources>

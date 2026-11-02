@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <application>
+        <!-- 仅 debug 包可用的调试开关，方便脚本化验证 -->
+        <receiver
+            android:name=".DebugCommandReceiver"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.sodamusic.helper.DEBUG_START" />
+                <action android:name="com.sodamusic.helper.DEBUG_STOP" />
+                <action android:name="com.sodamusic.helper.DEBUG_DUMP" />
+            </intent-filter>
+        </receiver>
+    </application>
+
+</manifest>

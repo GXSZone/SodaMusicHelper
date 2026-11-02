@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">汽水自动领取</string>
+
+    <string name="hero_title_idle">待机中</string>
+    <string name="hero_title_running">自动领取中</string>
+    <string name="hero_title_stopped">已停止</string>
+    <string name="hero_today_count">今日已领</string>
+    <string name="hero_count_unit">次</string>
+    <string name="hero_subtitle_idle">点下方按钮，剩下的交给它</string>
+
+    <string name="section_service">无障碍服务</string>
+    <string name="section_control">运行控制</string>
+    <string name="section_log">运行日志</string>
+    <string name="status_chip_enabled">已启用</string>
+    <string name="status_chip_disabled">未启用</string>
+
+    <string name="service_hint_disabled">未启用无障碍服务，自动点击无法工作</string>
+    <string name="service_hint_ready">已就绪，可以开始自动领取</string>
+    <string name="current_package_value">当前窗口：%1$s</string>
+    <string name="current_package_unknown">等待识别</string>
+    <string name="current_package_disconnected">当前窗口：服务未连接</string>
+
+    <string name="action_open_accessibility">打开无障碍设置</string>
+    <string name="action_open_soda">打开汽水音乐</string>
+    <string name="action_refresh_status">刷新状态</string>
+    <string name="action_start">开始自动领取</string>
+    <string name="action_stop">停止</string>
+    <string name="action_stop_claim">停止自动领取</string>
+    <string name="action_clear_log">清空</string>
+    <string name="action_save">保存</string>
+    <string name="action_cancel">取消</string>
+
+
+    <string name="phase_launching">启动汽水音乐…</string>
+    <string name="phase_navigating">进入任务入口…</string>
+    <string name="phase_scanning">寻找看广告任务…</string>
+    <string name="phase_click_ad">点击看广告…</string>
+    <string name="phase_watching_ad">广告播放中…（%1$ds）</string>
+    <string name="phase_closing_ad">关闭广告…</string>
+    <string name="phase_claiming">领取时长…</string>
+    <string name="phase_error">出错</string>
+
+    <string name="log_empty">暂无日志，开始自动领取后会实时显示</string>
+
+    <string name="settings_title">高级设置</string>
+    <string name="settings_target_package">目标应用包名</string>
+    <string name="settings_target_package_hint">例如 com.luna.music</string>
+    <string name="settings_daily_limit">每日领取上限（次）</string>
+    <string name="settings_ad_wait">广告最长等待（秒）</string>
+    <string name="settings_minutes_per_claim">每轮估算时长（分钟）</string>
+    <string name="settings_claim_sound">领取提示音</string>
+    <string name="settings_saved">设置已保存</string>
+
+    <string name="toast_need_accessibility">请先开启无障碍服务</string>
+    <string name="toast_started">已开始自动领取</string>
+    <string name="toast_stopped">已停止</string>
+
+    <string name="accessibility_service_label">SodaMusic Helper 自动化服务</string>
+    <string name="accessibility_service_description">读取当前界面节点，用于在汽水音乐内自动完成看广告领取听歌时长。</string>
+    <string name="cd_advanced">打开高级设置</string>
+
+    <!-- UI 追加：hero 统计组合文案与打开汽水音乐失败提示 -->
+    <string name="hero_minutes_value">%1$d 分钟</string>
+    <string name="toast_launch_failed">未能打开汽水音乐，请确认已安装</string>
+    <string name="phase_cooldown_idle">冷却中…</string>
+
+    <!-- 悬浮窗短文案（每句 ≤6 字，68dp 宽一行放得下） -->
+    <string name="phase_compact_idle">待\n机</string>
+    <string name="phase_compact_launching">启\n动</string>
+    <string name="phase_compact_navigating">入\n口</string>
+    <string name="phase_compact_scanning">找\n广</string>
+    <string name="phase_compact_click_ad">点\n广</string>
+    <string name="phase_compact_ad">广\n告</string>
+    <string name="phase_compact_ad_countdown">%1$d\ns</string>
+    <string name="phase_compact_closing_ad">关\n闭</string>
+    <string name="phase_compact_claim">已\n领</string>
+    <string name="phase_compact_reset">复\n位</string>
+    <string name="phase_compact_yield">等\n回</string>
+    <string name="phase_compact_stopped">停\n止</string>
+    <string name="phase_compact_error">出\n错</string>
+
+    <!-- 悬浮窗最小化圆点 -->
+    <string name="panel_minimized_desc">悬浮窗已最小化为圆点，点按恢复胶囊</string>
+
+    <!-- 悬浮窗控制 -->
+    <string name="panel_switch_title">悬浮窗控制</string>
+    <string name="panel_switch_desc">在其它应用上层显示开始/停止胶囊</string>
+</resources>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    悬浮窗最小化后的圆点（同样由 AssistsWindowManager 承载）。
+    根 44dp 是**点击热区**，视觉圆只有 36dp（居中），内部 6dp 状态点；
+    渐变底/描边/投影都在 FloatingPanelController.styleMinimized() 里生成。
+-->
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/floatingMinimizedRoot"
+    android:layout_width="44dp"
+    android:layout_height="44dp"
+    android:background="@android:color/transparent">
+
+    <View
+        android:id="@+id/floatingMinimizedCircle"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:layout_gravity="center" />
+
+    <View
+        android:id="@+id/floatingMinimizedDot"
+        android:layout_width="6dp"
+        android:layout_height="6dp"
+        android:layout_gravity="center" />
+</FrameLayout>

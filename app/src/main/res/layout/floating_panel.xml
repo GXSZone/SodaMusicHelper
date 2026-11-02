@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    悬浮窗胶囊（TYPE_ACCESSIBILITY_OVERLAY，由 AssistsWindowManager 直接承载本视图）。
+    尺寸 52x104dp，圆角在代码里按「宽度/2」生成，因此两端是半圆。
+    文字竖排：TextView 宽 16dp（1 个字宽），每个字自然折成一行，最多 4 行。
+    背景/光晕/圆形按钮全部由 FloatingPanelController 代码生成。
+-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/floatingRoot"
+    android:layout_width="52dp"
+    android:layout_height="104dp"
+    android:background="@android:color/transparent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:paddingHorizontal="2dp"
+    android:paddingVertical="8dp">
+
+    <!-- 顶部状态区：10dp 光晕 + 6dp 圆点（颜色与呼吸动画在代码里控制） -->
+    <FrameLayout
+        android:layout_width="10dp"
+        android:layout_height="10dp">
+
+        <View
+            android:id="@+id/floatingStatusHalo"
+            android:layout_width="10dp"
+            android:layout_height="10dp" />
+
+        <View
+            android:id="@+id/floatingStatusDot"
+            android:layout_width="6dp"
+            android:layout_height="6dp"
+            android:layout_gravity="center" />
+    </FrameLayout>
+
+    <!--
+        文字区：宽 34dp（52dp 胶囊 - 左右各 2dp padding），高 0dp + weight=1，最多 2 行。
+        文案本身带显式换行（见 strings.xml 的 phase_compact_*）：汉字每行一个，倒计时为「120」+「s」两行；
+        breakStrategy=simple 防止数字被行内拆开（1/2/3 位数都不换行）。
+    -->
+    <TextView
+        android:id="@+id/floatingPhaseText"
+        android:layout_width="34dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="2dp"
+        android:layout_weight="1"
+        android:breakStrategy="simple"
+        android:ellipsize="end"
+        android:fontFamily="sans-serif-medium"
+        android:gravity="center"
+        android:letterSpacing="0.1"
+        android:lineSpacingExtra="1dp"
+        android:maxLines="2"
+        android:paddingTop="2dp"
+        android:paddingBottom="2dp"
+        android:textSize="10sp"
+        tools:text="12s" />
+
+    <!-- 开始/停止：32dp 圆形按钮（白色半透明底 + 白色图标；小位移=点击，超 12dp=拖动） -->
+    <ImageButton
+        android:id="@+id/floatingActionButton"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:background="@android:color/transparent"
+        android:contentDescription="@string/action_start"
+        android:scaleType="centerInside"
+        android:src="@drawable/ic_play" />
+</LinearLayout>
